@@ -16,8 +16,10 @@ jobs:
         id: publish
         uses: k-paxian/dart-package-publisher@master
         with:
+          flutter: true
           accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
           refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
+          suppressBuildRunner: true
           
       - name: Tag commit
         if: steps.publish.outputs.success
