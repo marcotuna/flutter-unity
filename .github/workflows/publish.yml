@@ -19,9 +19,9 @@ jobs:
           accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
           refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
           
-     - name: Tag commit
-          if: steps.publish.outputs.success
-          uses: hole19/git-tag-action@master
-          env:
-            TAG: ${{steps.publish.outputs.package}}-${{steps.publish.outputs.localVersion}}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Tag commit
+        if: steps.publish.outputs.success
+        uses: hole19/git-tag-action@master
+        env:
+          TAG: ${{steps.publish.outputs.package}}-${{steps.publish.outputs.localVersion}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
