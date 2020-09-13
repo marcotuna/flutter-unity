@@ -26,4 +26,4 @@ jobs:
         uses: hole19/git-tag-action@master
         env:
           TAG: ${{steps.publish.outputs.localVersion}}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DEVELOPER_TOKEN }}
