@@ -25,5 +25,5 @@ jobs:
         if: steps.publish.outputs.success
         uses: hole19/git-tag-action@master
         env:
-          TAG: ${{steps.publish.outputs.package}}-${{steps.publish.outputs.localVersion}}
+          TAG: ${{steps.publish.outputs.localVersion}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
