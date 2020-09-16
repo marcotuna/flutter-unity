@@ -1,5 +1,5 @@
-name: flutter_unity.testing
-description: A Flutter plugin for embedding Unity projects in Flutter projects (Testing only).
+name: flutter_unity
+description: A Flutter plugin for embedding Unity projects in Flutter projects.
 # Although semantic versioning doesn’t promise any compatibility between
 # versions prior to 1.0.0, the Dart community convention is to treat those
 # versions semantically as well. The interpretation of each number is just
